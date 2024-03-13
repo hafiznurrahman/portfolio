@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --dark: 21 19 24;
+        --light: 248 237 255;
+        --primary: 181 66 255;
+        --secondary: 66 181 255;
+    }
+}
+* {
+    scroll-behavior: smooth;
+}
+nav a.active {
+    background: linear-gradient(45deg, rgb(181, 66, 255), rgb(66, 181, 255));
+    background-clip: text;
+}
+.hidden-thumb-scroll::-webkit-scrollbar {
+    display: none;
+}
