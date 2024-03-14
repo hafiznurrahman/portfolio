@@ -13,7 +13,7 @@ function Home() {
                 author="Hafiz NR"
                 urlPage={window.location.href}
                 thumbnail="/portfolio_thumbnail.png"
-                summary="enim veniam commodo occaecat do"
+                
             />
             <header className="flex items-center justify-center gap-3 bg-dark text-light font-semibold dark:text-dark dark:bg-light p-3 mb-4">
                 <PiInfoFill />Still In Development Stage

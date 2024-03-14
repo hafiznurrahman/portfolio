@@ -11,7 +11,7 @@ function NotFound() {
                 author="Hafiz NR"
                 urlPage={window.location.href}
                 thumbnail="/portfolio_thumbnail.png"
-                summary="enim veniam commodo occaecat do"
+                
             />
             <section className="w-full min-h-screen flex flex-col items-center justify-center gap-5 text-lg text-center p-3">
                 <img

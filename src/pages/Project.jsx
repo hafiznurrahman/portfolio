@@ -29,7 +29,7 @@ function Project() {
                 author="Hafiz NR"
                 urlPage={window.location.href}
                 thumbnail="/portfolio_thumbnail.png"
-                summary="enim veniam commodo occaecat do"
+                
             />
             <section className="w-11/12 md:w-8/12 flex items-center justify-center gap-4 bg-dark/5 backdrop-blur fixed left-1/2 -translate-x-1/2 top-3 md:top-24 rounded-xl p-3 mx-auto">
                 <input

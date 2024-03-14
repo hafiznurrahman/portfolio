@@ -10,7 +10,7 @@ function Navbar() {
                     <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/projects">Project</NavLink>
+                    <NavLink to="/projects">Projects</NavLink>
                 </li>
                 <li>
                     <Toggle />

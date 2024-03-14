@@ -6,8 +6,7 @@ export default function Meta({
     keywords,
     author,
     urlPage,
-    thumbnail,
-    summary
+    thumbnail
 }) {
     return (
         <Helmet>
@@ -22,7 +21,7 @@ export default function Meta({
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={thumbnail} />
-            <meta name="twitter:card" content={summary} />
+<meta property="twitter:card" content="summary_large_image"/>
         </Helmet>
     );
 }
