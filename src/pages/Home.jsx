@@ -1,9 +1,23 @@
 import { Link } from "react-router-dom";
-import { PiStarFourFill } from "react-icons/pi";
+import { PiStarFourFill, PiInfoFill } from "react-icons/pi";
 import LineChart from "../components/LineChart.jsx";
+import Meta from "../components/Meta.jsx";
+
 function Home() {
     return (
         <>
+            <Meta
+                title="Homepage - hafiznurrahman"
+                description="deserunt qui qui dolore deserunt commodo aliquip nulla cupidatat cillum"
+                keywords="protfolio, hafiz nur rahman, homepage, about"
+                author="Hafiz NR"
+                urlPage={window.location.href}
+                thumbnail="/portfolio_thumbnail.png"
+                summary="enim veniam commodo occaecat do"
+            />
+            <header className="flex items-center justify-center gap-3 bg-dark text-light font-semibold dark:text-dark dark:bg-light p-3 mb-4">
+                <PiInfoFill />Still In Development Stage
+            </header>
             <section className="w-11/12 h-auto text-light dark:text-dark bg-dark dark:bg-light rounded-xl rounded-bl-none overflow-hidden my-5 md:mt-0 mx-auto relative">
                 <div>
                     <div className="w-80 h-auto bg-secondary/25 aspect-square rounded-full blur-3xl absolute -top-40 -left-40 pointer-events-none"></div>
@@ -83,8 +97,7 @@ function Home() {
                     </div>
                 </div>
             </section>
-            <section>
-            </section>
+            <section></section>
         </>
     );
 }

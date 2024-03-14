@@ -12,6 +12,7 @@
 }
 * {
     scroll-behavior: smooth;
+  
 }
 nav a.active {
     background: linear-gradient(45deg, rgb(181, 66, 255), rgb(66, 181, 255));

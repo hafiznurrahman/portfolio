@@ -1,24 +1,32 @@
 import { Link } from "react-router-dom";
+import Tag from "../components/Tag.jsx";
 
-function Card(props) {
+function Card({ img, alt, title, description, tags, index }) {
+    const tagsArr = tags.split(",");
+
     return (
-        <Link>
-            <div className="w-full bg-dark dark:bg-light border aspect-video rounded-xl overflow-hidden mb-5">
+        <Link to={`?detail=${title}`}>
+            <div className="w-full bg-dark dark:bg-light border border-dark dark:border-light aspect-video rounded-xl overflow-hidden mb-5">
                 <img
-                    src="https://i.ibb.co/Xj5BjPR/imgnotfound.png"
-                    alt={props.alt}
+                    src={img}
+                    alt={alt}
                     className="w-full h-full object-cover"
                 />
             </div>
             <div>
                 <h2 className="w-fit text-dark/50 text-xl font-bold bg-gradient-to-br from-secondary from-15% to-primary to-85% bg-clip-text mb-1">
-                    This Title Project
+                    {title}
                 </h2>
-                <p className=" line-clamp-3 mb-3">
-                    Ad labore consequat quis voluptate laborum cillum culpa id
-                    nulla sunt deserunt Lorem aute. Adipisicing Lorem velit quis
-                    ea consequat exercitation voluptate.
-                </p>
+                <p className=" line-clamp-3 mb-3">{description}</p>
+                <ul className="w-full flex flex-wrap gap-3">
+                    {tagsArr.map((tag, index) => {
+                        return (
+                            <li key={index}>
+                                <Tag text={tag} index={index} />
+                            </li>
+                        );
+                    })}
+                </ul>
             </div>
         </Link>
     );

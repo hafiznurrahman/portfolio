@@ -8,6 +8,7 @@ function Layout() {
             <ScrollRestoration />
             <Navbar />
             <main className="w-full md:w-11/12 min-h-screen md:pt-24 mx-auto">
+                
                 <Outlet />
             </main>
             <Footer />

@@ -49,7 +49,7 @@ function LineChart() {
                         },
                         beginAtZero: true
                     },
-                    maintainAspectRatio: false
+              
                 },
                 plugins: {
                     legend: {
