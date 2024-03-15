@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { IoSearch, IoFilter } from "react-icons/io5";
 import Card from "../components/Card.jsx";
-import Meta from "../components/Meta.jsx";
+//import Meta from "../components/Meta.jsx";
 import Tag from "../components/Tag.jsx";
+import{ Helmet} from "react-helmet";
 function Project() {
     const [filterActive, setFilterActive] = useState(false);
     function handleFilter() {
@@ -22,15 +23,33 @@ function Project() {
     ];
     return (
         <>
-            <Meta
-                title="Projects - hafiznurrahman"
-                description="deserunt qui qui dolore deserunt commodo aliquip nulla cupidatat cillum"
-                keywords="protfolio, hafiz nur rahman, projects"
-                author="Hafiz NR"
-                urlPage={window.location.href}
-                thumbnail="/portfolio_thumbnail.png"
-                
-            />
+            <Helmet>
+                <title>Projects - hafiznurrahman</title>
+                <meta
+                    name="description"
+                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
+                />
+                <meta
+                    name="keywords"
+                    content="protfolio, hafiz nur rahman, projects"
+                />
+                <meta name="author" content="Hafiz Nur Rahman" />
+                <meta property="og:title" content="Projects - hafiznurrahman" />
+                <meta
+                    property="og:description"
+                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
+                />
+                <meta property="og:image" content="/portfolio_thumbnail.png" />
+                <meta property="og:url" content={window.location.href} />
+                <meta name="twitter:title" content="Projects - hafiznurrahman" />
+                <meta
+                    name="twitter:description"
+                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
+                />
+                <meta name="twitter:image" content="/portfolio_thumbnail.png" />
+                <meta property="twitter:card" content="summary_large_image" />
+            </Helmet>
+
             <section className="w-11/12 md:w-8/12 flex items-center justify-center gap-4 bg-dark/5 backdrop-blur fixed left-1/2 -translate-x-1/2 top-3 md:top-24 rounded-xl p-3 mx-auto">
                 <input
                     type="text"
