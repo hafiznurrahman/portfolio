@@ -2,16 +2,17 @@ import { Link } from "react-router-dom";
 import { PiStarFourFill, PiInfoFill } from "react-icons/pi";
 import LineChart from "../components/LineChart.jsx";
 import Meta from "../components/Meta.jsx";
+import { data } from "../services/dataDummy.js";
 
 function Home() {
     return (
         <>
-            <Meta 
-            title="Homepage - hafiznurrahman" 
-            description="in occaecat irure eiusmod minim cillum amet sint dolor laboris" 
-            keywords="portfolio, hafiz nur rahman, home, about, projects, frontend, developer" 
-            urlPage={window.location.href} 
-            thumbnail="https://i.ibb.co/MBYmzVJ/portfolio-thumbnail.png" 
+            <Meta
+                title="Homepage - hafiznurrahman"
+                description="in occaecat irure eiusmod minim cillum amet sint dolor laboris"
+                keywords="portfolio, hafiz nur rahman, home, about, projects, frontend, developer"
+                urlPage={window.location.href}
+                thumbnail="https://i.ibb.co/MBYmzVJ/portfolio-thumbnail.png"
             />
 
             <header className="flex items-center justify-center gap-3 bg-dark text-light font-semibold dark:text-dark dark:bg-light p-3 mb-4">
@@ -25,9 +26,7 @@ function Home() {
                 </div>
                 <div className="flex flex-col gap-5 p-4">
                     <h1 className="text-5xl font-black z-10">
-                        Frontend
-                        <br />
-                        Developer
+                        {data.profiles.role}
                     </h1>
                     <p className="w-full md:w-3/5 border-l-2 border-primary px-2 z-20">
                         non amet sit dolore aute mollit ipsum id excepteur minim
@@ -45,12 +44,16 @@ function Home() {
                 <div className="w-fit h-auto bg-light dark:bg-dark pt-4 pr-4 rounded-tr-xl relative before:content-('') before:w-5 before:h-5 before:bg-transparent before:absolute before:-top-5 before:left-0 before:shadow-[-10px_10px_0_#000000] before:shadow-light dark:before:shadow-dark before:rounded-full after:content-('') after:w-5 after:h-5 after:bg-transparent after:absolute after:bottom-0 after:-right-5 after:shadow-[-10px_10px_0_#000000] after:shadow-light dark:after:shadow-dark after:rounded-full ">
                     <div className="flex bg-dark dark:bg-light rounded-md py-2">
                         <small className="flex flex-col items-center justify-center border-l-2 border-l-primary px-2.5">
-                            <span className="text-lg font-black">1+ Year</span>
+                            <span className="text-lg font-black">
+                                {data.profiles.experience}
+                            </span>
                             <span className="text-xs italic">Experience</span>
                         </small>
 
                         <small className="flex flex-col items-center justify-center border-l-2 border-l-secondary px-2.5">
-                            <span className="text-lg font-black">50</span>
+                            <span className="text-lg font-black">
+                                {data.projects.length}
+                            </span>
                             <span className="text-xs italic">Projects</span>
                         </small>
                     </div>
@@ -62,18 +65,7 @@ function Home() {
                     alt="site logo HNR"
                     className="w-28 h-28 bg-dark dark:bg-light float-left rounded-lg mr-2 select-none"
                 />
-                <p className="">
-                    Minim nostrud velit qui sunt Lorem ea id voluptate
-                    reprehenderit. Elit officia ullamco adipisicing eiusmod
-                    labore Lorem aliquip eiusmod enim fugiat aliqua. Aliquip ut
-                    fugiat consequat deserunt deserunt qui nisi irure amet ea
-                    consectetur. Commodo incididunt irure sit ullamco et nulla
-                    magna mollit veniam non Lorem. Magna sunt elit anim
-                    consectetur Lorem veniam excepteur ullamco cupidatat. Nisi
-                    ex occaecat nisi commodo amet eu. Dolore sit ut velit enim
-                    veniam. Voluptate Lorem do cupidatat fugiat nulla consequat
-                    labore dolor excepteur irure.
-                </p>
+                <p>{data.profiles.description}</p>
             </section>
             <section className="w-11/12 grid items-center grid-cols-1 md:grid-cols-2 landscape:grid-cols-2 gap-5 clear-both mx-auto mb-5">
                 <div>
