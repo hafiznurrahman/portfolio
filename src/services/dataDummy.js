@@ -11,7 +11,7 @@ export const data = {
     ],
     profiles: {
         name: "Hafiz Nur Rahman",
-        role: "Frontend Developer",
+        role: `Frontend <br /> Developer`,
         experience: "1+ Year",
         description:
             "Irure culpa est cillum sit mollit duis non esse irure officia. Excepteur dolore officia ad voluptate consectetur enim enim aliqua mollit enim enim. Adipisicing ullamco quis veniam amet eiusmod ut elit laboris excepteur. Mollit amet et velit occaecat exercitation non consectetur. Minim do et duis magna consectetur mollit voluptate. Velit ex exercitation est id. Ea excepteur proident exercitation duis ut eiusmod velit incididunt quis officia duis nostrud. Est commodo excepteur consequat occaecat. Elit velit consectetur mollit et commodo ipsum consequat qui exercitation. Dolor Lorem anim officia veniam pariatur Lorem est exercitation quis aliqua.",

@@ -19,6 +19,7 @@ function Home() {
                 <PiInfoFill />
                 Still In Development Stage
             </header>
+
             <section className="w-11/12 h-auto text-light dark:text-dark bg-dark dark:bg-light rounded-xl rounded-bl-none overflow-hidden my-5 md:mt-0 mx-auto relative">
                 <div>
                     <div className="w-80 h-auto bg-secondary/25 aspect-square rounded-full blur-3xl absolute -top-40 -left-40 pointer-events-none"></div>
@@ -49,7 +50,7 @@ function Home() {
                             </span>
                             <span className="text-xs italic">Experience</span>
                         </small>
-
+                        
                         <small className="flex flex-col items-center justify-center border-l-2 border-l-secondary px-2.5">
                             <span className="text-lg font-black">
                                 {data.projects.length}
@@ -59,6 +60,7 @@ function Home() {
                     </div>
                 </div>
             </section>
+
             <section className="w-11/12 mx-auto pt-2 mb-5" id="Explore">
                 <img
                     src="/site_logo.png"
@@ -67,6 +69,7 @@ function Home() {
                 />
                 <p>{data.profiles.description}</p>
             </section>
+
             <section className="w-11/12 grid items-center grid-cols-1 md:grid-cols-2 landscape:grid-cols-2 gap-5 clear-both mx-auto mb-5">
                 <div>
                     <h2 className="text-3xl font-black mb-3">
