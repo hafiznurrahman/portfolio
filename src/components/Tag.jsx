@@ -5,8 +5,7 @@ export default function Tag({ index, text }) {
                 index % 2 == 0
                     ? "text-primary bg-primary/20"
                     : "text-secondary bg-secondary/20"
-            } rounded-xl py-0.5 px-3`}
-        >
+            } rounded-xl py-0.5 px-3`}>
             {text}
         </span>
     );

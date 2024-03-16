@@ -1,40 +1,19 @@
 import { Link } from "react-router-dom";
 import { PiStarFourFill, PiInfoFill } from "react-icons/pi";
 import LineChart from "../components/LineChart.jsx";
-//import Meta from "../components/Meta.jsx";
-import {Helmet} from "react-helmet"
+import Meta from "../components/Meta.jsx";
+
 function Home() {
     return (
         <>
-            <Helmet>
-                <title>Homepage - hafiznurrahman</title>
-                <meta
-                    name="description"
-                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
-                />
-                <meta
-                    name="keywords"
-                    content="protfolio, hafiz nur rahman, about"
-                />
-                <meta name="author" content="Hafiz Nur Rahman" />
-                <meta property="og:title" content="Homepage - hafiznurrahman" />
-                <meta
-                    property="og:description"
-                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
-                />
-                <meta property="og:image" content="/portfolio_thumbnail.png" />
-                <meta property="og:url" content={window.location.href} />
-                <meta
-                    name="twitter:title"
-                    content="Homepage - hafiznurrahman"
-                />
-                <meta
-                    name="twitter:description"
-                    content="officia mollit aliqua et deserunt quis labore cillum veniam aute"
-                />
-                <meta name="twitter:image" content="/portfolio_thumbnail.png" />
-                <meta property="twitter:card" content="summary_large_image" />
-            </Helmet>
+            <Meta 
+            title="Homepage - hafiznurrahman" 
+            description="in occaecat irure eiusmod minim cillum amet sint dolor laboris" 
+            keywords="portfolio, hafiz nur rahman, home, about, projects, frontend, developer" 
+            urlPage={window.location.href} 
+            thumbnail="https://i.ibb.co/MBYmzVJ/portfolio-thumbnail.png" 
+            />
+
             <header className="flex items-center justify-center gap-3 bg-dark text-light font-semibold dark:text-dark dark:bg-light p-3 mb-4">
                 <PiInfoFill />
                 Still In Development Stage
