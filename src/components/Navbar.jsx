@@ -4,7 +4,7 @@ import { data } from "../services/dataDummy.js";
 
 function Navbar() {
     return (
-        <nav className="w-11/12 md:w-6/12 h-fit bg-dark/5 backdrop-blur fixed left-1/2 bottom-4 md:top-4 -translate-x-1/2 rounded-xl p-2 z-[999]">
+        <nav className="w-11/12 md:w-6/12 h-fit bg-dark/5 backdrop-blur fixed left-1/2 bottom-4 md:top-4 -translate-x-1/2 rounded-xl p-2 z-[998]">
             <ul className="w-full flex items-center justify-evenly gap-2 bg-light text-dark/50 font-semibold rounded-xl py-2">
                 {data.navigation.map((page, index) => {
                     return (

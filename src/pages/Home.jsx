@@ -15,11 +15,6 @@ function Home() {
                 thumbnail="https://i.ibb.co/MBYmzVJ/portfolio-thumbnail.png"
             />
 
-            <header className="flex items-center justify-center gap-3 bg-dark text-light font-semibold dark:text-dark dark:bg-light p-3 mb-4">
-                <PiInfoFill />
-                Still In Development Stage
-            </header>
-
             <section className="w-11/12 h-auto text-light dark:text-dark bg-dark dark:bg-light rounded-xl rounded-bl-none overflow-hidden my-5 md:mt-0 mx-auto relative">
                 <div>
                     <div className="w-80 h-auto bg-secondary/25 aspect-square rounded-full blur-3xl absolute -top-40 -left-40 pointer-events-none"></div>
@@ -27,7 +22,11 @@ function Home() {
                 </div>
                 <div className="flex flex-col gap-5 p-4">
                     <h1 className="text-5xl font-black z-10">
-                        {data.profiles.role}
+                        <span
+                            dangerouslySetInnerHTML={{
+                                __html: data.profiles.role
+                            }}
+                        />
                     </h1>
                     <p className="w-full md:w-3/5 border-l-2 border-primary px-2 z-20">
                         non amet sit dolore aute mollit ipsum id excepteur minim
@@ -50,7 +49,7 @@ function Home() {
                             </span>
                             <span className="text-xs italic">Experience</span>
                         </small>
-                        
+
                         <small className="flex flex-col items-center justify-center border-l-2 border-l-secondary px-2.5">
                             <span className="text-lg font-black">
                                 {data.projects.length}
