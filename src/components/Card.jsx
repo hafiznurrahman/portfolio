@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import Tag from "../components/Tag.jsx";
+import Tag from "../fragments/Tag.jsx";
 
 function Card({ img, alt, title, description, tags }) {
     const tagsArr = tags.split(",");
 
     return (
-        <Link to={`?detail=${title}`}>
+        <Link to={`detail/${title}`}>
             <div className="w-full bg-dark dark:bg-light border border-dark dark:border-light aspect-video rounded-xl overflow-hidden mb-5">
                 <img
                     src={img}
                     alt={alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover select-none"
                 />
             </div>
 

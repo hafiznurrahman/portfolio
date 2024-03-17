@@ -2,7 +2,8 @@ import {
     createBrowserRouter,
     createRoutesFromElements,
     RouterProvider,
-    Route
+    Route,
+    useParams
 } from "react-router-dom";
 
 import Layout from "../layout/Layout.jsx";
@@ -15,7 +16,8 @@ function Routes() {
         createRoutesFromElements(
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
-                <Route path="projects" element={<Project />} />
+                <Route path="projects" element={<Project />}/>
+                    
                 <Route path="*" element={<NotFound />} />
             </Route>
         )

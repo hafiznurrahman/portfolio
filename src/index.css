@@ -12,8 +12,12 @@
 }
 * {
     scroll-behavior: smooth;
-  
 }
+::selection, mark {
+    color: rgba(66, 181, 255, 1);
+    background-color: rgba(66, 181, 255, 0.1);
+}
+
 nav a.active {
     background: linear-gradient(45deg, rgb(181, 66, 255), rgb(66, 181, 255));
     background-clip: text;

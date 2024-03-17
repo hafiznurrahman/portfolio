@@ -14,7 +14,7 @@ export const data = {
         role: "Frontend <br/> Developer",
         experience: "1+ Year",
         description:
-            "Irure culpa est cillum sit mollit duis non esse irure officia. Excepteur dolore officia ad voluptate consectetur enim enim aliqua mollit enim enim. Adipisicing ullamco quis veniam amet eiusmod ut elit laboris excepteur. Mollit amet et velit occaecat exercitation non consectetur. Minim do et duis magna consectetur mollit voluptate. Velit ex exercitation est id. Ea excepteur proident exercitation duis ut eiusmod velit incididunt quis officia duis nostrud. Est commodo excepteur consequat occaecat. Elit velit consectetur mollit et commodo ipsum consequat qui exercitation. Dolor Lorem anim officia veniam pariatur Lorem est exercitation quis aliqua.",
+            "<mark><b>Hello&#128075;</b></mark>, let me introduce myself, my name is Hafiz Nur Rahman, I am a web developer, more specifically a frontend developer. I have been studying this field since March 2023. I became interested in the IT field after watching a video about Penetration Testing or security testing on a website. I tried to learn a bit about it, but due to limited resources and difficulties in understanding the material, I switched to web development, particularly frontend. My plan after mastering frontend is to also learn backend, as I aspire to become a fullstack developer.",
         socialMedia: [
             {
                 id: 1,

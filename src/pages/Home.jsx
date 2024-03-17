@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { PiStarFourFill, PiInfoFill } from "react-icons/pi";
+import { data } from "../services/dataDummy.js";
 import LineChart from "../components/LineChart.jsx";
 import Meta from "../components/Meta.jsx";
-import { data } from "../services/dataDummy.js";
+import Avatar from "../fragments/Avatar.jsx";
 
 function Home() {
     return (
@@ -29,9 +30,10 @@ function Home() {
                         />
                     </h1>
                     <p className="w-full md:w-3/5 border-l-2 border-primary px-2 z-20">
-                        non amet sit dolore aute mollit ipsum id excepteur minim
-                        laborum culpa incididunt cupidatat pariatur incididunt
-                        in consequat Lorem sit
+                        Welcome Everyone, This is my portfolio site, Built with
+                        ReactJs, TailwindCss and ChartJs. To explore my
+                        portfolio site click the Explore Now button below or use
+                        navigation menu.
                     </p>
                     <Link
                         to="#Explore"
@@ -61,12 +63,16 @@ function Home() {
             </section>
 
             <section className="w-11/12 mx-auto pt-2 mb-5" id="Explore">
-                <img
-                    src="/site_logo.png"
-                    alt="site logo HNR"
-                    className="w-28 h-28 bg-dark dark:bg-light float-left rounded-lg mr-2 select-none"
-                />
-                <p>{data.profiles.description}</p>
+                <div className="w-28 h-28 bg-dark dark:bg-light rounded-2xl float-left mr-2">
+                    <Avatar imgSrc="/site_logo.png" imgAlt="site logo HNR" />
+                </div>
+                
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: data.profiles.description
+                        }}
+                    />
+                
             </section>
 
             <section className="w-11/12 grid items-center grid-cols-1 md:grid-cols-2 landscape:grid-cols-2 gap-5 clear-both mx-auto mb-5">
