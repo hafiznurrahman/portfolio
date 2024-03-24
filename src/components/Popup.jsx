@@ -16,7 +16,7 @@ function Popup() {
 
     return (
         <section
-            className={`w-screen h-screen flex items-center justify-center bg-dark/80 fixed top-0 left-0 z-[999] transition-all duration-300 ${
+            className={`w-screen h-dvh flex items-center justify-center bg-dark/80 fixed top-0 left-0 z-[999] transition-all duration-300 ${
                 popup ? "visible opacity-1" : "opacity-0 invisible"
             }`}
         >

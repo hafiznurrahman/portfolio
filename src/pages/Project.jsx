@@ -10,10 +10,17 @@ import Input from "../fragments/Input.jsx";
 import Tag from "../fragments/Tag.jsx";
 
 function Project() {
+    const handleSearch = () => {
+        let inputSearch = document.querySelector("#search");
+        if (inputSearch.value !== "") {
+            alert("MSG: " + inputSearch.value.toLowerCase());
+            inputSearch.value = "";
+        }
+    };
+
     const [filterActive, setFilterActive] = useState(false);
     const filterRef = useRef(null);
     const btnFilterRef = useRef(null);
-    const inputSearchRef = useRef(null);
 
     function handleFilter() {
         setFilterActive(active => !active);
@@ -55,7 +62,11 @@ function Project() {
                     type="text"
                     placeholder="Search"
                 />
-                <Button btnType="submit" btnColor="gradient">
+                <Button
+                    btnType="submit"
+                    btnColor="gradient"
+                    btnClick={handleSearch}
+                >
                     <IoSearch />
                 </Button>
 
